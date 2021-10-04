@@ -18,14 +18,6 @@ mongoose.connect(DB, {
 mongoose.connection.on('connected', () => {
   print('Server connected to mongoDb');
 });
-// mongoose.connection.on('error', error => {
-//   print(`
-// 	**************************************************************************
-// 	Error is:
-// 	${error}
-// 	**************************************************************************
-// 	`);
-// });
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
