@@ -28,7 +28,8 @@ const product = new mongoose.Schema(
     },
     image: {
       type: String,
-      default: ""
+      default: "",
+      required: true
     },
     ratingsAverage: {
       type: Number,
